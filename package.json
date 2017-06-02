@@ -53,7 +53,7 @@
   },
   "dependencies": {
     "bumped": "^0.10.4",
-    "bumped-changelog": "^0.3.9",
+    "bumped-changelog": "^0.3.10",
     "bumped-finepack": "^0.2.8",
     "bumped-terminal": "^0.7.3",
     "colur": "0.0.4",
@@ -64,7 +64,7 @@
     "git-dirty": "^1.0.2",
     "glob-all": "3.1.0",
     "lodash": "4.17.4",
-    "mocha": "^3.3.0",
+    "mocha": "^3.4.2",
     "npm-run-all": "4.0.2",
     "shelljs": "0.7.7",
     "should": "11.2.1"

@@ -16419,36 +16419,33 @@ exports.default = function (Component, defaultStyles, options) {
     }
 
     WrappedComponent.prototype.render = function render() {
-      var propsChanged = void 0;
       var styles = void 0;
 
-      propsChanged = false;
+      var hasDefaultstyles = (0, _isObject3.default)(defaultStyles);
 
-      if (this.props.styles) {
-        styles = this.props.styles;
-      } else if ((0, _isObject3.default)(defaultStyles)) {
+      if (this.props.styles || hasDefaultstyles) {
         var props = Object.assign({}, this.props);
+
+        if (this.props.styles) {
+          styles = this.props.styles;
+        } else if (hasDefaultstyles) {
+          styles = defaultStyles;
+          delete this.props.styles;
+        }
 
         Object.defineProperty(props, 'styles', {
           configurable: true,
           enumerable: false,
-          value: defaultStyles,
+          value: styles,
           writable: false
         });
 
         this.props = props;
-
-        propsChanged = true;
-        styles = defaultStyles;
       } else {
         styles = {};
       }
 
       var renderResult = _Component.prototype.render.call(this);
-
-      if (propsChanged) {
-        delete this.props.styles;
-      }
 
       if (renderResult) {
         return (0, _linkClass2.default)(renderResult, styles, options);
@@ -16724,23 +16721,23 @@ exports.default = function (Component, defaultStyles, options) {
 
     var styles = void 0;
     var useProps = void 0;
+    var hasDefaultstyles = (0, _isObject3.default)(defaultStyles);
 
-    if (props.styles) {
-      useProps = props;
-      styles = props.styles;
-    } else if ((0, _isObject3.default)(defaultStyles)) {
-      useProps = (0, _assign3.default)({}, props, {
-        styles: defaultStyles
-      });
+    if (props.styles || hasDefaultstyles) {
+      useProps = Object.assign({}, props);
+
+      if (props.styles) {
+        styles = props.styles;
+      } else {
+        styles = defaultStyles;
+      }
 
       Object.defineProperty(useProps, 'styles', {
         configurable: true,
         enumerable: false,
-        value: defaultStyles,
+        value: styles,
         writable: false
       });
-
-      styles = defaultStyles;
     } else {
       useProps = props;
       styles = {};
