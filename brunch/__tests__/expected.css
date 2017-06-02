@@ -1,0 +1,126 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #eee;
+  overflow: hidden;
+}
+.body-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.body-container > .title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+     -moz-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-calc(99.9% * 1 / 1 - (30px - 30px * 1 / 1));
+  width: -moz-calc(99.9% * 1 / 1 - (30px - 30px * 1 / 1));
+  width: calc(99.9% * 1 / 1 - (30px - 30px * 1 / 1));
+}
+.body-container > .title > h1 {
+  font-size: 5em;
+  font-family: monospace;
+}
+.body-container > .title:last-child {
+  margin-right: 0;
+}
+.body-container > .title:nth-child(1n) {
+  float: right;
+  margin-right: 0;
+}
+.body-container > .logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-calc(99.9% * 1 / 1 - (30px - 30px * 1 / 1));
+  width: -moz-calc(99.9% * 1 / 1 - (30px - 30px * 1 / 1));
+  width: calc(99.9% * 1 / 1 - (30px - 30px * 1 / 1));
+}
+.body-container > .logo:last-child {
+  margin-right: 0;
+}
+.body-container > .logo:nth-child(1n) {
+  float: right;
+  margin-right: 0;
+}
+.body-container > .title > h1:hover {
+  color: #8e44ad;
+  -webkit-transition-delay: 0s;
+     -moz-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 2s;
+     -moz-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  -moz-transition-property: color;
+  transition-property: color;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+     -moz-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+       -o-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+.body-container > .title > h1:not(:hover) {
+  color: #3498db;
+  -webkit-transition-delay: 0s;
+     -moz-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 2s;
+     -moz-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  -moz-transition-property: color;
+  transition-property: color;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+     -moz-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+       -o-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+
+/*# sourceMappingURL=app.css.map*/
