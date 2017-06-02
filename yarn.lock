@@ -188,14 +188,14 @@ builtin-modules@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
 
-bumped-changelog@^0.3.9:
-  version "0.3.9"
-  resolved "https://registry.yarnpkg.com/bumped-changelog/-/bumped-changelog-0.3.9.tgz#dbfe202c8eac7ed743a6e19cb44234f15744655b"
+bumped-changelog@^0.3.10:
+  version "0.3.10"
+  resolved "https://registry.yarnpkg.com/bumped-changelog/-/bumped-changelog-0.3.10.tgz#6f4743aa597dd7f4070e6d54a96ff5aa938b99c2"
   dependencies:
-    coffee-script "~1.12.2"
+    coffee-script "~1.12.6"
     conventional-changelog-cli "~1.3.1"
-    cross-spawn "5.1.0"
-    exists-file "~3.0.0"
+    cross-spawn "~5.1.0"
+    exists-file "~3.0.1"
     lodash.defaults "~4.2.0"
 
 bumped-finepack@^0.2.8:
@@ -273,7 +273,7 @@ capture-stack-trace@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.0.tgz#4a6fa07399c26bba47f0b2496b4d0fb408c5550d"
 
-cb2promise@^1.0.2, cb2promise@~1.0.2:
+cb2promise@^1.0.2, cb2promise@~1.0.2, cb2promise@~1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/cb2promise/-/cb2promise-1.0.5.tgz#1ad713ce6a1bf5ec5cf4b07bda0f8689a41e534c"
   dependencies:
@@ -342,6 +342,10 @@ coffee-script@~1.10.0:
 coffee-script@~1.11.0:
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/coffee-script/-/coffee-script-1.11.1.tgz#bf1c47ad64443a0d95d12df2b147cc0a4daad6e9"
+
+coffee-script@~1.12.6:
+  version "1.12.6"
+  resolved "https://registry.yarnpkg.com/coffee-script/-/coffee-script-1.12.6.tgz#285a3f7115689065064d6bf9ef4572db66695cbf"
 
 colors@1.0.x:
   version "1.0.3"
@@ -587,7 +591,7 @@ cross-spawn-async@^2.1.1:
     lru-cache "^4.0.0"
     which "^1.2.8"
 
-cross-spawn@5.1.0, cross-spawn@^5.0.1:
+cross-spawn@^5.0.1, cross-spawn@~5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
   dependencies:
@@ -798,6 +802,12 @@ exists-file@~3.0.0:
   resolved "https://registry.yarnpkg.com/exists-file/-/exists-file-3.0.0.tgz#2e886bf9c6b696a8425cff217a897060e22e7465"
   dependencies:
     cb2promise "^1.0.2"
+
+exists-file@~3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/exists-file/-/exists-file-3.0.1.tgz#ff58a82839eb55110e50253e21b5adad61861e2c"
+  dependencies:
+    cb2promise "~1.0.5"
 
 exit-hook@^1.0.0:
   version "1.1.1"
@@ -1715,9 +1725,9 @@ mkdirp@0.5.1, mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
-mocha@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/mocha/-/mocha-3.3.0.tgz#d29b7428d3f52c82e2e65df1ecb7064e1aabbfb5"
+mocha@^3.4.2:
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/mocha/-/mocha-3.4.2.tgz#d0ef4d332126dbf18d0d640c9b382dd48be97594"
   dependencies:
     browser-stdout "1.3.0"
     commander "2.9.0"
