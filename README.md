@@ -1,7 +1,7 @@
 # `ctr` Stylus Install Examples
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ctr-lang/install-examples-Less/blob/master/LICENSE.txt)
-[![wercker status](https://app.wercker.com/status/8f4ed4fde5b3de4071aa279b8a0ed791/s/master "wercker status")](https://app.wercker.com/project/byKey/8f4ed4fde5b3de4071aa279b8a0ed791)
+[![wercker status](https://app.wercker.com/status/5494d001f6f805862ec652ad7d9328dd/s/master "wercker status")](https://app.wercker.com/project/byKey/5494d001f6f805862ec652ad7d9328dd)
 
 
 ## Description
